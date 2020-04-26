@@ -19,7 +19,7 @@
             "id": "02",
             "project_name": "Super Mario Matching Game",
             "description": "A Super Mario-themed matching game inspired by Super Mario Bros 3.",
-            "technologies": ["Vue.js", "JavaScript", "HTML", "CSS", "Font Awesome"],
+            "technologies": ["JavaScript", "Vue.js", "HTML", "CSS", "Font Awesome"],
             "live_link": "https://michaelacook.github.io/mario-cardmatch-game/",
             "github_link": "https://github.com/michaelacook/mario-cardmatch-game",
             "image_urls": [

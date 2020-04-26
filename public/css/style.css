@@ -1,17 +1,17 @@
-
 body {
   font-family: Helvetica Neue,Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
   font-weight: bold;
 }
 
-h5{
+h5 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
@@ -25,7 +25,7 @@ h6{
   font-weight: 600;
 }
 
-p{
+p {
   font-size: 15px;
   color: #666;
 }
@@ -39,7 +39,7 @@ border-radius: 5px;
 }
 
 .button{
-  background-color: #333;
+  background-color: teal;
 }
 
 .button:hover{
@@ -66,9 +66,11 @@ a:hover{
 
 .portfolio-me{
   padding: 20px;
-  background: #121213;
-  color: #fff;
-  box-shadow: none !important;
+  /* background: #121213; */
+  /* color: #fff; */
+  color: #121213;
+  background: #fff;
+  box-shadow: 1px 0 16px rgba(0, 0, 0, 0.2) !important;
 }
 
   .portfolio-me p{
@@ -93,7 +95,7 @@ a:hover{
 .portfolio-breadcrumb{
   margin: 0;
   padding: 20px;
-  border-bottom: 1px solid #eaeaea;
+  /* border-bottom: 1px solid #eaeaea; */
 }
 
  .portfolio-breadcrumb a{
@@ -155,4 +157,16 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+#portfolio-image {
+  width: 215px;
+  height: 215px;
+  border-radius: 50%;
+  border: 2px solid teal !important;
+}
+
+#my-info nav a {
+  display: block;
+  margin-bottom: 10px;
 }

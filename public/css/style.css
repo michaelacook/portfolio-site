@@ -1,29 +1,37 @@
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+body {
+  font-family: Helvetica Neue,Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
 }
 
-  h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
-  }
+h1, h2, h3, h4, h5 {
+  font-family: Inter,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+}
 
-  h6{
-    letter-spacing: 2.5px;
-    -webkit-text-transform: uppercase;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
+h1 {
+  font-weight: bold;
+}
 
-  p{
-    font-size: 15px;
-    color: #666;
-  }
+h5{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 2.5px;
+  -webkit-text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+h6{
+  letter-spacing: 2.5px;
+  -webkit-text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p{
+  font-size: 15px;
+  color: #666;
+}
 
 .round{
-  border-radius: 5px;
+border-radius: 5px;
 }
 
 .text-light{

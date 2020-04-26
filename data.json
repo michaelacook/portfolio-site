@@ -1,13 +1,133 @@
 {
     "projects": [
         {
-            "id": "",
-            "project_name": "",
-            "description": "",
-            "technologies": [],
-            "live_link": "",
-            "github_link": "",
-            "image_urls": []
+            "id": "01",
+            "project_name": "Classic Minesweeper",
+            "description": "A classic minesweeper app.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/minesweeper/",
+            "github_link": "https://github.com/michaelacook/minesweeper",
+            "image_urls": [
+                "static/images/minesweeper/minesweeper-lg.jpg",  
+                "static/images/minesweeper/minesweeper-beginner-win.jpg",
+                "static/images/minesweeper/minesweeper-beginner-lose.jpg",
+                "static/images/minesweeper/minesweeper-intermediate.jpg",
+                "static/images/minesweeper/minesweeper-expert.jpg"
+            ]
+        },
+        {
+            "id": "02",
+            "project_name": "Super Mario Matching Game",
+            "description": "A Super Mario-themed matching game inspired by Super Mario Bros 3.",
+            "technologies": ["Vue.js", "JavaScript", "HTML", "CSS", "Font Awesome"],
+            "live_link": "https://michaelacook.github.io/mario-cardmatch-game/",
+            "github_link": "https://github.com/michaelacook/mario-cardmatch-game",
+            "image_urls": [
+                "static/images/mario-card-match/mario-card-match.jpg", 
+                "static/images/mario-card-match/mario-card-match-2.jpg", 
+                "static/images/mario-card-match/mario-card-match-gameover.jpg"
+            ]
+        },
+        {
+            "id": "03",
+            "project_name": "Giphy App",
+            "description": "A gif searching and sharing app built with the GIPHY API.",
+            "technologies": ["JavaScript", "Giphy API", "Bootstrap", "Font Awesome", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/giphy-app/",
+            "github_link": "https://github.com/michaelacook/giphy-app",
+            "image_urls": [
+                "static/images/giphy-app/giphy-app.jpg",
+                "static/images/giphy-app/giphy-app-lightmode.jpg",
+                "static/images/giphy-app/giphy-app-share.jpg"
+            ]
+        },
+        {
+            "id": "04",
+            "project_name": "Employee Directory",
+            "description": "A mock employee directory built with the Random User Generator API.",
+            "technologies": ["JavaScript", "Random Use Generator API", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/employee-directory/",
+            "github_link": "https://github.com/michaelacook/employee-directory",
+            "image_urls": [
+                "static/images/employee-directory/employee-directory.jpg",
+                "static/images/employee-directory/employee-directory-modal.jpg"
+            ]
+        },
+        {
+            "id": "05",
+            "project_name": "Phrase Hunter",
+            "description": "A phrase guessing game.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/game-show-app/",
+            "github_link": "https://github.com/michaelacook/game-show-app",
+            "image_urls": [
+                "static/images/game-show-app/phrase-hunter.jpg",
+                "static/images/game-show-app/game-play.jpg",
+                "static/images/game-show-app/win.jpg",
+                "static/images/game-show-app/lose.jpg"
+            ]
+        },
+        {
+            "id": "06",
+            "project_name": "Lorem Ipsum Generator",
+            "description": "A simple lorem ipsum text generator.",
+            "technologies": ["JavaScript", "Node.js", "Express.js", "Bootstrap", "HTML", "CSS"],
+            "live_link": "https://lorem-generator.herokuapp.com/",
+            "github_link": "https://github.com/michaelacook/lorem-ipsum-generator",
+            "image_urls": [
+                "static/images/lorem-ipsum-generator/lorem-ipsum.jpg",
+                "static/images/lorem-ipsum-generator/lorem-ipsum-text.jpg"
+            ]
+        },
+        {
+            "id": "07",
+            "project_name": "Tic Tac Toe",
+            "description": "A tic tac toe app with a computer opponent.",
+            "technologies": ["JavaScript", "HTML", "CSS", "Font Awesome"],
+            "live_link": "https://michaelacook.github.io/tic-tac-toe/",
+            "github_link": "https://github.com/michaelacook/tic-tac-toe",
+            "image_urls": [
+                "static/images/tic-tac-toe/tic-tac-toe.jpg",
+                "static/images/tic-tac-toe/tic-tac-toe-win.jpg",
+                "static/images/tic-tac-toe/tic-tac-toe-lose.jpg",
+                "static/images/tic-tac-toe/tic-tac-toe-draw.jpg"
+            ]
+        },
+        {
+            "id": "08",
+            "project_name": "Interactive Form",
+            "description": "An interactive form with custom client-side validation for a mock tech conference.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/interactive-form/",
+            "github_link": "https://github.com/michaelacook/interactive-form",
+            "image_urls": [
+                "static/images/interactive-form/form.jpg",
+                "static/images/interactive-form/form-2.jpg",
+                "static/images/interactive-form/validation.jpg",
+                "static/images/interactive-form/validation2.jpg"
+            ]
+        },
+        {
+            "id": "09",
+            "project_name": "Current Weather App",
+            "description": "A current weather app built with the Open Weather API.",
+            "technologies": ["JavaScript", "Open Weather API", "Bootstrap", "Bootstrap Toggle", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/hows-the-weather/",
+            "github_link": "https://github.com/michaelacook/hows-the-weather",
+            "image_urls": [
+                "static/images/weather-app/weather-app.jpg",
+                "static/images/weather-app/weather-metric.jpg",
+                "static/images/weather-app/weather-imperial.jpg"
+            ]
+        },
+        {
+            "id": "10",
+            "project_name": "Random Quote Generator",
+            "description": "A simple random quote generator.",
+            "technologies": ["JavaScript", "HTML", "CSS"],
+            "live_link": "https://michaelacook.github.io/random-quote-generator/",
+            "github_link": "https://github.com/michaelacook/random-quote-generator",
+            "image_urls": ["static/images/random-quote-generator/random-quote.jpg"]
         }
     ]
 }

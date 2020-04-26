@@ -179,10 +179,11 @@ a:hover{
 }
 
 .repo {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  right: 0;
-  padding: 25px;
+  right: 0; */
+  /* padding: 25px; */
+  margin-top: 30px;
 }
 
 .repo a {

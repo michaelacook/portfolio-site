@@ -13,6 +13,9 @@ block content
         //- Use interpolation to dynamically add the project description.
         p.lead.text-light #{projects[projectIndex].description}
 
+        a(href='' + projects[projectIndex].live_link target='_blank') Live Demo
+        a(href='' + projects[projectIndex].github_link target='_blank') GitHub Repo
+
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
@@ -20,10 +23,7 @@ block content
         ul
           each technology in projects[projectIndex].technologies
             li= technology
-
-        //- Use template literals and interpolation to add URLs to the hrefs below so they link to the repo and the live version of each project.
-        a.button.expanded(href='' + projects[projectIndex].live_link target='_blank') Live Demo
-        a.button.expanded(href='' + projects[projectIndex].github_link target='_blank') GitHub Repo
+       
     
     //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see. 
     each url in projects[projectIndex].image_urls 

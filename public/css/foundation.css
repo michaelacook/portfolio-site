@@ -4991,7 +4991,9 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border: solid 4px #fefefe;
   border-radius: 0;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-  line-height: 0; }
+  line-height: 0; 
+  transition: all .2s ease-in-out;
+}
 
 a.thumbnail {
   transition: box-shadow 200ms ease-out; }

@@ -11,7 +11,6 @@ html(class="no-js" lang="en" dir="ltr")
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Inter&display=swap')
     link(rel='stylesheet', href='/static/css/foundation.css')
     link(rel='stylesheet', href='/static/css/style.css')
-    //- link(rel='stylesheet', href='https://unpkg.com/98.css')
   body
     #my-info.off-canvas.position-left.reveal-for-large.portfolio-me(data-off-canvas='')
       .grid-y.grid-padding-x(style='height: 100%;')
@@ -21,28 +20,27 @@ html(class="no-js" lang="en" dir="ltr")
             a(href='/')
              img.thumbnail(src='/static/images/michaelscott.jpg' id="portfolio-image")
           .cell.auto
-
-            //- Add your name here.
             h5 Michael Cook
 
-            //- Add text here to describe who you are, what you do, and why you are so awesome.
             p.text-light
               | Software developer. Continuous learner. Tinkerer.
-
-            //- Add about page route to the href below. 
+ 
             nav
              a(href='/about') About
              a(href='https://codepen.io/michaelacook' target='_blank') Codepen
              a(href='https://github.com/michaelacook' target='_blank') Github
              a(href='https://npmjs.com/settings/michaelacook/packages' target="'_blank") Packages
 
+            p.text-light.repo
+              small 
+                | Like this site? Have a suggestion? Check out the Github 
+                a(target='_blank' href='https://github.com/michaelacook/portfolio-site') repo 
+
     .off-canvas-content(data-off-canvas-content='')
       .title-bar.hide-for-large
         .title-bar-left
           button.menu-icon(type='button', data-toggle='my-info')
-
-          //- Add your name here.  This is for the mobile screen sized version.
-          span.title-bar-title Name
+          span.title-bar-title Michael Cook
       block content
         
 

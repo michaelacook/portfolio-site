@@ -1,4 +1,3 @@
-
 /*
 Instantiate the app, require dependencies, set up middleware and routes.
 Entry point is bin/www.js

@@ -129,5 +129,20 @@
             "github_link": "https://github.com/michaelacook/random-quote-generator",
             "image_urls": ["static/images/random-quote-generator/random-quote.jpg"]
         }
+    ],
+    "skills": [
+        "static/images/skills/html.png",
+        "static/images/skills/css.png",
+        "static/images/skills/javascript.png",
+        "static/images/skills/bootstrap.png",
+        "static/images/skills/node.png",
+        "static/images/skills/sequelize.png",
+        "static/images/skills/npm.png",
+        "static/images/skills/php.png",
+        "static/images/skills/composer.png",
+        "static/images/skills/vscode.png",
+        "static/images/skills/git.png",
+        "static/images/skills/github.png",
+        "static/images/skills/linux.png"
     ]
 }

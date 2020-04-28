@@ -180,15 +180,11 @@ a:hover {
   margin-top: 8px;
 }
 
-.portfolio-bio {
+/* .portfolio-bio {
   line-height: 25px;
-}
+} */
 
 .repo {
-  /* position: absolute;
-  bottom: 0;
-  right: 0; */
-  /* padding: 25px; */
   margin-top: 30px;
 }
 
@@ -199,6 +195,29 @@ a:hover {
 
 .repo a:hover {
   color: darkseagreen;
+}
+
+.contact, .skills {
+  margin-top: 50px;
+}
+
+.skills h4, .contact h4 {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills div {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.skills img {
+  width: 100px;
+}
+
+.skills p {
+  margin-top: 22px;
 }
 
 #portfolio-image {

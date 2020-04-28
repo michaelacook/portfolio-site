@@ -16,4 +16,9 @@ app.use((req, res, next) => projectsMiddleware(req, res, next));
 app.use(express.urlencoded());
 app.use(routes);
 
+// error handling middleware
+app.use(function (err, req, res, next) {
+    // handle errors;
+});
+
 module.exports = app;

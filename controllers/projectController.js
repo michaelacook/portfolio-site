@@ -1,7 +1,9 @@
 /* Projects Controller */
 
 module.exports = (req, res, next) => {
-    throw new Error("This is an error");
+    const error = new Error("This is an error");
+    error.status = 500;
+    // throw error;
     const args = new Object();
     const id = req.params.id;
     const project = res.locals.projects.find(project => project.id == id);

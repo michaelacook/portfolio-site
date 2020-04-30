@@ -9,7 +9,7 @@ const routes = require('./routes/routes.js');
 
 // require middleware
 const projectsMiddleware = require('./middleware/projectsMiddleware.js');
-const errorHandlerMiddleware = require('./middleware/errorHandlerMiddleware.js');
+const errorMiddleware = require('./middleware/errorMiddleware.js');
 const notFoundMiddleware = require('./middleware/notFoundMiddleware.js');
 
 app.set('view engine', 'pug');
@@ -21,9 +21,7 @@ app.use(express.urlencoded());
 app.use(routes);
 
 // error handling middleware
-app.use((err, req, res, next) => {
-    res.render('error.pug');
-});
+app.use((err, req, res, next) => errorMiddleware(err, req, res, next));
 
 // 404 handler
 app.use((req, res, next) => notFoundMiddleware(req, res, next));

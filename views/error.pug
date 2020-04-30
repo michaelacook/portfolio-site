@@ -1,3 +1,10 @@
 extends layout 
 
 block content
+    nav.grid-container.portfolio-breadcrumb
+            a(href='/') ← Back
+    .error.grid-container
+        h1 Error
+        h4= status
+        h4= message 
+        pre= stack

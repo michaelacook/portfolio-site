@@ -220,6 +220,11 @@ a:hover {
   margin-top: 22px;
 }
 
+.error {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
 #portfolio-image {
   width: 215px;
   height: 215px;

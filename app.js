@@ -26,4 +26,6 @@ app.use((err, req, res, next) => errorMiddleware(err, req, res, next));
 // 404 handler
 app.use((req, res, next) => notFoundMiddleware(req, res, next));
 
-module.exports = app;
+app.listen(3000, () => console.log("Server listening on port 3000."));
+
+// module.exports = app;

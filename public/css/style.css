@@ -225,6 +225,19 @@ a:hover {
   margin-left: 50px;
 }
 
+.contact img {
+  width: 30px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact p {
+  margin-top: 18px;
+}
+
 #portfolio-image {
   width: 215px;
   height: 215px;

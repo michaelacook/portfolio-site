@@ -1,17 +1,21 @@
 /* About Controller */
 
 const nodemailer = require('nodemailer');
+const sgMail = require('@sendgrid/mail');
 
 
-module.exports = async (req, res) => {
+module.exports = (req, res) => {
 
     if (req.method === 'POST') {
-        try {
-            await sendEmail(req);
-            return res.redirect('/about?send=success#contact')
-        } catch (err) {
-            return res.redirect('/about?send=fail#contact')
-        }
+        sgMail.setApiKey('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');
+        const msg = {
+            to: 'mcook0775@gmail.com',
+            from: 'mcook0775@gmail.com',
+            subject: 'Sending with Twilio SendGrid is Fun',
+            text: 'and easy to do anywhere, even with Node.js',
+            html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+        };
+        sgMail.send(msg);
     }
 
     const args = new Object();

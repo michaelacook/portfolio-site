@@ -1,9 +1,6 @@
 /*
 Instantiate the app, require dependencies, set up middleware and routes.
-Entry point is bin/www.js
 */
-
-// process.env.GMAIL_PASS="rcbwqukhcitvpcyp";
 
 const express = require('express');
 const app = express();
@@ -31,5 +28,3 @@ app.use((err, req, res, next) => errorMiddleware(err, req, res, next));
 app.use((req, res, next) => notFoundMiddleware(req, res, next));
 
 app.listen(3000, () => console.log("Server listening on port 3000."));
-
-// module.exports = app;

@@ -27,31 +27,34 @@ module.exports = async (req, res) => {
  * @param {Object} req - http request
  */
 function sendEmail(req) {
-    const name = req.body.name;
-    const email = req.body.email;
-    const msg = req.body.message;
-
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+    return new Promise((resolve) => {
+      const name = req.body.name;
+      const email = req.body.email;
+      const msg = req.body.message;
+  
+      const transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
         port: 587,
         secure: false,
-        service: 'gmail',
+        service: "gmail",
         auth: {
-            user: 'mcook0775@gmail.com',
-            pass: "rcbwqukhcitvpcyp"
-        }
-    });
-
-    const mailOptions = {
-        from: 'mcook0775@gmail.com',
-        to: 'mcook0775@gmail.com',
-        subject: 'Portfolio Inquiry',
+          user: "mcook0775@gmail.com",
+          pass: process.env["GMAIL_PASS"],
+        },
+      });
+  
+      const mailOptions = {
+        from: "mcook0775@gmail.com",
+        to: "mcook0775@gmail.com",
+        subject: "Portfolio Inquiry",
         text: `
-Name: ${name}
-Email: ${email}
-Message:
-
-${msg}`};
-
-    return transporter.sendMail(mailOptions);
-}
+              Name: ${name}
+              Email: ${email}
+              Message:
+        ${msg}`,
+      };
+  
+      transporter.sendMail(mailOptions);
+      resolve();
+    });
+  }

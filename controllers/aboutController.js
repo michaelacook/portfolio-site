@@ -1,6 +1,6 @@
 /* About Controller */
 
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 
 
 module.exports = async (req, res) => {

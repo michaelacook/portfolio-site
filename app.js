@@ -15,7 +15,7 @@ const notFoundMiddleware = require('./middleware/notFoundMiddleware.js');
 app.set('view engine', 'pug');
 
 // middleware
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use('/static', express.static('public'));
 app.use((req, res, next) => projectsMiddleware(req, res, next));
 app.use(express.urlencoded());

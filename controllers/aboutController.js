@@ -1,6 +1,6 @@
 /* About Controller */
 
-// const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
 
 
 module.exports = async (req, res) => {
@@ -38,6 +38,7 @@ function sendEmail(req) {
         secure: false,
         service: "gmail",
         auth: {
+          type: 'OAuth2',
           user: "mcook0775@gmail.com",
           pass: process.env["GMAIL_PASS"],
         },

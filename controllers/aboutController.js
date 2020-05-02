@@ -38,7 +38,7 @@ function sendEmail(req) {
         service: 'gmail',
         auth: {
             user: 'mcook0775@gmail.com',
-            pass: process.env['GMAIL_PASS']
+            pass: "rcbwqukhcitvpcyp"
         }
     });
 

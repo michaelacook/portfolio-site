@@ -238,6 +238,14 @@ a:hover {
   margin-top: 18px;
 }
 
+.contact-form button {
+  background-color: darkseagreen;
+  color: #fff;
+  padding: 12px 10px 12px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(10, 10, 10, 0.2);
+}
+
 #portfolio-image {
   width: 215px;
   height: 215px;

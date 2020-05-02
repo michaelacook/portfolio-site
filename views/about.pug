@@ -13,7 +13,7 @@ block content
         p.lead.text-light
           | Software Developer
 
-        .portfolio-bio
+        #bio.portfolio-bio
           p
             | Hi, I&apos;m Michael and I&apos;m a programmer. I have experience in a few different languages,
             | but JavaScript is my strong suit. I love learning, solving problems, and most of all, building
@@ -23,7 +23,7 @@ block content
             | and have had the time of my life. I am now looking for my first professional opportunity where I can 
             | put my skills to work and make the world a better place!
           
-        .skills 
+        #skills.skills 
           h4 Skills
           each skill in skills
             div.skill-img 
@@ -66,7 +66,7 @@ block content
             li CSS
             li Deployment
           
-        .contact
+        #contact.contact
           h4 Contact
     
           a(href='#')
@@ -76,7 +76,14 @@ block content
 
           p
             | Want to talk about a project or how I could bring value to your company? Feel free to reach out to me on social media, 
-            | or email me at mcook0775@gmail.com. I would love to hear from you!
+            | or send me a message. I would love to hear from you!
+            //- Here instead there should be a contact form 
+            .contact-form 
+              form(action='/about' method='post')
+                input(type='text' name='name' placeholder='Name' required)
+                input(type='email' name='email' placeholder='Email' required)
+                textarea(name='message' placeholder='Message' wrap='soft' rows='5' required)
+                button(type='submit') Send
 
 
   nav.grid-container.portfolio-breadcrumb

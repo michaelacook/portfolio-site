@@ -3,8 +3,11 @@ Instantiate the app, require dependencies, set up middleware and routes.
 Entry point is bin/www.js
 */
 
+require('dotenv').config({path: __dirname + '/.env'});
+
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 const routes = require('./routes/routes.js');
 
 // require middleware
@@ -15,6 +18,7 @@ const notFoundMiddleware = require('./middleware/notFoundMiddleware.js');
 app.set('view engine', 'pug');
 
 // middleware
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/static', express.static('public'));
 app.use((req, res, next) => projectsMiddleware(req, res, next));
 app.use(express.urlencoded());

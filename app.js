@@ -3,7 +3,7 @@ Instantiate the app, require dependencies, set up middleware and routes.
 Entry point is bin/www.js
 */
 
-process.env.GMAIL_PASS="rcbwqukhcitvpcyp";
+// process.env.GMAIL_PASS="rcbwqukhcitvpcyp";
 
 const express = require('express');
 const app = express();

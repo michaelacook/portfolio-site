@@ -2,4 +2,4 @@ example-html
 mockups
 node_modules
 .env
-./env.txt
+/env.txt

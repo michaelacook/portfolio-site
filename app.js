@@ -8,6 +8,8 @@ if (environment === 'development') {
     require('dotenv').config();
 }
 
+const port = process.env.PORT || 8000;
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -33,4 +35,4 @@ app.use((err, req, res, next) => errorMiddleware(err, req, res, next));
 // 404 handler
 app.use((req, res, next) => notFoundMiddleware(req, res, next));
 
-app.listen(3000, () => console.log("Server listening on port 3000."));
+app.listen(port, () => console.log("Server listening on port 3000."));

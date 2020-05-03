@@ -2,6 +2,12 @@
 Instantiate the app, require dependencies, set up middleware and routes.
 */
 
+// determine if dev environment and if so require dotenv 
+const environment = process.env.NODE_ENV || 'development';
+if (environment === 'development') {
+    require('dotenv').config();
+}
+
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');

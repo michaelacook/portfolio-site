@@ -7,10 +7,8 @@ block content
     .grid-x
       .cell.small-6.medium-9.large-9
 
-        //- Use interpolation to dynamically add the project title.
         h1 #{projects[projectIndex].project_name}
 
-        //- Use interpolation to dynamically add the project description.
         p.lead.text-light #{projects[projectIndex].description}
 
         a(href='' + projects[projectIndex].live_link target='_blank') Live Demo
@@ -19,13 +17,10 @@ block content
       .cell.portfolio-meta.small-6.medium-2.large-3
         h6 Technologies
 
-        //- Use an `each` iterator to replace the li tags below and interpolation to dynamically add the technologies used in each project.
         ul
           each technology in projects[projectIndex].technologies
             li= technology
        
-    
-    //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see. 
     each url in projects[projectIndex].image_urls 
       img.image(src='/' + url)
     

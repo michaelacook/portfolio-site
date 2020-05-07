@@ -8,8 +8,10 @@ NOTE: The message logged to the console appears twice probably
 because the site makes a second request for the favicon, according to my research. 
 */
 
-module.exports = (req, res, next) => {
-    console.error("Oops! Whatever you're looking for, it doesn't exist.");
-    res.render('404.pug');
-    next();
+module.exports = () => {
+    return function(req, res, next) {
+        console.error("Oops! Whatever you're looking for, it doesn't exist.");
+        res.render('404.pug');
+        next();
+    }
 }

@@ -1,6 +1,5 @@
-/*
-Instantiate the app, require dependencies, set up middleware and routes.
-*/
+/* Entry point */
+
 
 // determine if dev environment and if so require dotenv 
 const environment = process.env.NODE_ENV || 'development';
@@ -28,11 +27,9 @@ app.use('/static', express.static('public'));
 app.use(projectsMiddleware);
 app.use(express.urlencoded());
 app.use(routes);
-
-// error handling middleware
 app.use(errorMiddleware);
-
-// 404 handler
 app.use(notFoundMiddleware);
 
+
+// server
 app.listen(port, () => console.log("Server listening on port 3000."));
